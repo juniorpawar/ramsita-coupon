@@ -1,0 +1,34 @@
+{
+  "name": "food-coupon-backend",
+  "version": "1.0.0",
+  "description": "Digital Food Coupon Management System - Backend",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "init-admin": "node scripts/createAdmin.js"
+  },
+  "keywords": [
+    "coupon",
+    "qr",
+    "management"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.22.1",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "googleapis": "^128.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3",
+    "nodemailer": "^6.9.7",
+    "nodemon": "^3.1.11",
+    "qrcode": "^1.5.3",
+    "xlsx": "^0.18.5"
+  }
+}

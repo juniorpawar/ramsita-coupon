@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary-dark text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-success {
+    @apply bg-success hover:bg-success-dark text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-error {
+    @apply bg-error hover:bg-error-dark text-white font-semibold py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6;
+  }
+  
+  .input-field {
+    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent;
+  }
+  
+  .label {
+    @apply block text-sm font-medium text-gray-700 mb-2;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Scanner specific styles */
+.scan-area {
+  position: relative;
+  overflow: hidden;
+}
+
+.scan-area::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #2563eb, transparent);
+  animation: scanLine 2s ease-in-out infinite;
+}
+
+/* Loading spinner */
+.spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #2563eb;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/* ---------------------------- */
+/* Core CSS Variables */
+/* ---------------------------- */
+/* ============================= */
+/* Digital Coupon Dashboard UI  */
+/* ============================= */
+
+:root {
+  /* Backgrounds */
+  --color-bg-main: #d1e5f8;  
+  --color-bg-card: #eaebff;      /* App background */
+  --color-bg-card-primary: #dfff74;        /* Cards / panels */
+  --color-bg-card-secondary: #fbcece;     /* Sidebar / navbar */
+  --color-bg-sidebar: #F1F5F9;     /* Sidebar / navbar */
+  --color-bg-hover: #E2E8F0;
+
+  /* Text */
+  --color-text-primary: #0F172A;   /* Main text */
+  --color-text-secondary: #334155; /* Secondary text */
+  --color-text-muted: #64748B;     /* Muted text */
+
+  /* Primary / Accent */
+  --color-primary: #2563EB;        /* Blue */
+  --color-primary-hover: #1D4ED8;
+
+  /* Status Colors */
+  --color-success: #16A34A;        /* Used */
+  --color-warning: #EAB308;        /* Pending */
+  --color-danger: #DC2626;         /* Error */
+  --color-info: #0284C7;
+
+  /* Borders & Dividers */
+  --color-border: #CBD5E1;
+
+  /* Shadows */
+  --shadow-card: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
