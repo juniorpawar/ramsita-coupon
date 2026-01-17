@@ -7,7 +7,7 @@ export async function register(req, res, next) {
     try {
         const { teamName, teamSize, participants } = req.body;
 
-        console.log("data from google form : " , teamName, teamSize, participants)
+        // console.log("data from google form : " , teamName, teamSize, participants)
 
         // Validate required fields
         if (!teamName || !teamSize || !participants || !Array.isArray(participants)) {
