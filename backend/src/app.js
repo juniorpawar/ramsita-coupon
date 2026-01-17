@@ -48,7 +48,7 @@ const corsOptions = {
         const allowedOrigins = [
             config.frontend.url,
             'http://localhost:5173',
-            'https://food-coupon-frontend.onrender.com'
+            'https://food-coupon-frontend.onrender.com',
             /^http:\/\/192\.168\.\d{1,3}\.\d{1,3}:\d+$/,  // LAN addresses
             /^http:\/\/10\.\d{1,3}\.\d{1,3}\.\d{1,3}:\d+$/,  // Alternative LAN
             /^https:\/\/.*\.ngrok-free\.app$/  // ngrok URLs
