@@ -23,7 +23,6 @@ export const parseError = (error) => {
     }
 
     if (error.message === 'Network Error') {
-        console.log("aliskhdis")
         return 'Network error. Please check your connection.';
     }
 

@@ -135,8 +135,9 @@ const Dashboard = () => {
                                     Real-time QR scan status.
                                 </p>
 
-                                <button
-                                    className="
+                                <a href="/scanner">
+                                    <button
+                                        className="
                                         bg-[var(--color-primary)] text-[var(--color-text-primary)]
                                         px-3 py-2 sm:px-4 sm:py-2.5
                                         text-xs sm:text-sm md:text-base
@@ -144,9 +145,10 @@ const Dashboard = () => {
                                         hover:bg-[var(--color-primary-hover)] transition
                                         w-fit text-white
                                     "
-                                >
-                                    Scan QR
-                                </button>
+                                    >
+                                        Scan QR
+                                    </button>
+                                </a>
 
                             </div>
                         </div>
@@ -163,7 +165,7 @@ const Dashboard = () => {
                             {/* Content */}
                             <div className="ml-6 py-3 text-[var(--color-text-primary)]">
                                 <h2 className="text-sm sm:text-lg md:text-xl font-semibold mb-2 sm:mb-3 leading-snug">
-                                    Manage teama
+                                    Manage teams
                                 </h2>
 
                                 <p className="text-xs sm:text-sm md:text-base mb-3 sm:mb-4 opacity-90 leading-relaxed">
